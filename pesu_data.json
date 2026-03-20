@@ -1,0 +1,140 @@
+{
+  "subreddit": "r/PESU",
+  "comments": [
+    {
+      "comment_id": 0,
+      "topic": "placement_discussion",
+      "interactions": [
+        {"user": "cs_sophomore", "interaction_strength": 1.0},
+        {"user": "placements_hunter", "interaction_strength": 1.0},
+        {"user": "pesu_alumni", "interaction_strength": 0.5}
+      ]
+    },
+    {
+      "comment_id": 1,
+      "topic": "exam_solutions",
+      "interactions": [
+        {"user": "exam_prep_2024", "interaction_strength": 1.0},
+        {"user": "study_group", "interaction_strength": 1.0},
+        {"user": "academic_helper", "interaction_strength": 0.5}
+      ]
+    },
+    {
+      "comment_id": 2,
+      "topic": "project_ideas",
+      "interactions": [
+        {"user": "project_partner", "interaction_strength": 1.0},
+        {"user": "coding_ninja", "interaction_strength": 0.5},
+        {"user": "cse_aspirant", "interaction_strength": 1.0}
+      ]
+    },
+    {
+      "comment_id": 3,
+      "topic": "internship_opportunities",
+      "interactions": [
+        {"user": "internship_seeker", "interaction_strength": 1.0},
+        {"user": "placements_hunter", "interaction_strength": 1.0},
+        {"user": "pesu_alumni", "interaction_strength": 0.5}
+      ]
+    },
+    {
+      "comment_id": 4,
+      "topic": "lab_work",
+      "interactions": [
+        {"user": "lab_assistant", "interaction_strength": 1.0},
+        {"user": "semester_grind", "interaction_strength": 0.5},
+        {"user": "cse_aspirant", "interaction_strength": 1.0}
+      ]
+    },
+    {
+      "comment_id": 5,
+      "topic": "course_review",
+      "interactions": [
+        {"user": "senior_mentor", "interaction_strength": 1.0},
+        {"user": "academic_helper", "interaction_strength": 1.0},
+        {"user": "exam_prep_2024", "interaction_strength": 0.5}
+      ]
+    },
+    {
+      "comment_id": 6,
+      "topic": "placement_discussion",
+      "interactions": [
+        {"user": "pesu_alumni", "interaction_strength": 1.0},
+        {"user": "placement_prep", "interaction_strength": 1.0},
+        {"user": "internship_seeker", "interaction_strength": 0.5}
+      ]
+    },
+    {
+      "comment_id": 7,
+      "topic": "exam_solutions",
+      "interactions": [
+        {"user": "study_group", "interaction_strength": 1.0},
+        {"user": "academic_helper", "interaction_strength": 1.0},
+        {"user": "semester_grind", "interaction_strength": 1.0}
+      ]
+    },
+    {
+      "comment_id": 8,
+      "topic": "syllabus_doubt",
+      "interactions": [
+        {"user": "cse_aspirant", "interaction_strength": 1.0},
+        {"user": "coding_ninja", "interaction_strength": 0.5},
+        {"user": "study_group", "interaction_strength": 1.0}
+      ]
+    },
+    {
+      "comment_id": 9,
+      "topic": "senior_advice",
+      "interactions": [
+        {"user": "pesu_alumni", "interaction_strength": 1.0},
+        {"user": "senior_mentor", "interaction_strength": 1.0},
+        {"user": "placement_prep", "interaction_strength": 0.5}
+      ]
+    },
+    {
+      "comment_id": 10,
+      "topic": "club_activities",
+      "interactions": [
+        {"user": "coding_ninja", "interaction_strength": 1.0},
+        {"user": "study_group", "interaction_strength": 0.5},
+        {"user": "semester_grind", "interaction_strength": 0.5}
+      ]
+    },
+    {
+      "comment_id": 11,
+      "topic": "internship_opportunities",
+      "interactions": [
+        {"user": "placements_hunter", "interaction_strength": 1.0},
+        {"user": "internship_seeker", "interaction_strength": 1.0},
+        {"user": "placement_prep", "interaction_strength": 1.0}
+      ]
+    },
+    {
+      "comment_id": 12,
+      "topic": "lab_work",
+      "interactions": [
+        {"user": "lab_assistant", "interaction_strength": 1.0},
+        {"user": "cse_aspirant", "interaction_strength": 1.0},
+        {"user": "academic_helper", "interaction_strength": 0.5}
+      ]
+    },
+    {
+      "comment_id": 13,
+      "topic": "exam_solutions",
+      "interactions": [
+        {"user": "exam_prep_2024", "interaction_strength": 1.0},
+        {"user": "study_group", "interaction_strength": 1.0},
+        {"user": "semester_grind", "interaction_strength": 0.5}
+      ]
+    },
+    {
+      "comment_id": 14,
+      "topic": "project_ideas",
+      "interactions": [
+        {"user": "project_partner", "interaction_strength": 1.0},
+        {"user": "coding_ninja", "interaction_strength": 1.0},
+        {"user": "cse_aspirant", "interaction_strength": 0.5}
+      ]
+    }
+  ]
+}
