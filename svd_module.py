@@ -61,6 +61,7 @@ class SVDAnalyzer:
     @staticmethod
     def _kmeans(X, k, iterations=20):
         """Simple K-means implementation"""
+        np.random.seed(42)  # Fixed seed for reproducible results
         n_samples = X.shape[0]
         centroids = X[np.random.choice(n_samples, k, replace=False)]
         
