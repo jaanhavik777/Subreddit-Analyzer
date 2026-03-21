@@ -6,7 +6,7 @@ Uses **PageRank** (eigenvalue method) and **SVD** (Singular Value Decomposition)
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
 ### Install
 ```bash
@@ -18,7 +18,7 @@ pip install numpy pandas
 python main_analyzer.py
 ```
 
-## 📌 What Does This Project Do?
+## What Does This Project Do?
 
 Given a subreddit with users and comments:
 1. **Finds the most influential user** using PageRank algorithm
@@ -28,59 +28,13 @@ Given a subreddit with users and comments:
 2. **Detects hidden communities** using SVD
    - Reveals natural groups of users
    - Groups have similar interaction patterns
-
+      **interaction_strength values:**
+   - `1.0` = commented/upvoted (strong engagement)
+   - `0.5` = neutral engagement
+   - `-0.5` = downvoted (negative engagement)
 ---
 
-## Project Structure
-
-```
-.
-├── main_analyzer.py           ← RUN THIS FILE
-├── pagerank_module.py         ← PageRank algorithm
-├── svd_module.py              ← SVD & clustering
-├── data_loader.py             ← Load JSON data
-├── pesu_data.json             ← Your data (editable!)
-├── COMPLETE_PROJECT_DOCUMENTATION.md  ← Full math + code explanation
-└── README.md                  ← This file
-```
-
----
-
-## 📊 How to Use Your Own Data
-
-Edit `pesu_data.json`:
-
-```json
-{
-  "subreddit": "r/PESU",
-  "comments": [
-    {
-      "comment_id": 0,
-      "topic": "placement_discussion",
-      "interactions": [
-        {"user": "jaanhavi", "interaction_strength": 1.0},
-        {"user": "krishna", "interaction_strength": 0.5}
-      ]
-    }
-  ]
-}
-```
-
-**interaction_strength values:**
-- `1.0` = commented/upvoted (strong engagement)
-- `0.5` = neutral engagement
-- `-0.5` = downvoted (negative engagement)
-
-Then run:
-```bash
-python main_analyzer.py
-```
-
-New results based on your data! ✓
-
----
-
-## 🧮 The Algorithms
+## The Algorithms
 
 ### PageRank (Find Influential User)
 ```
@@ -98,11 +52,7 @@ New results based on your data! ✓
 4. Group users with similar patterns
 ```
 
-See `COMPLETE_PROJECT_DOCUMENTATION.md` for full math!
-
----
-
-## 📁 File Descriptions
+## File Descriptions
 
 | File | Purpose |
 |------|---------|
@@ -114,11 +64,11 @@ See `COMPLETE_PROJECT_DOCUMENTATION.md` for full math!
 
 ---
 
-## 🚀 Example: Customize for Your Use Case
+##  Example: Customize for Your Use Case
 
 ### Change user names
 ```json
-{"user": "jaanhavi", ...} → {"user": "alice", ...}
+{"user": "j", ...} → {"user": "alice", ...}
 ```
 
 ### Change topics
@@ -133,19 +83,6 @@ Just add more objects to the `comments` array.
 Delete all their interactions from the JSON.
 
 Then run `python main_analyzer.py` and see new results!
-
----
-
-## 📈 Expected Output Format
-
-```
-MOST INFLUENTIAL USER: [username] (PageRank Score: [0.0-0.3])
-
-HIDDEN COMMUNITY CLUSTERS:
-   Community 1: [user1, user2, user3, ...]
-   Community 2: [user4, user5, ...]
-   Community 3: [user6]
-```
 
 ---
 
@@ -181,42 +118,7 @@ HIDDEN COMMUNITY CLUSTERS:
 
 ---
 
-## Frequently Asked Questions
-
-**Q: Can I use real Reddit data?**
-A: Yes! The algorithm works with any user-comment data. Just format it as JSON following the structure in `pesu_data.json`.
-
-**Q: What if I have more users?**
-A: The code scales. Just add more interactions to `pesu_data.json`. Tested with 10-100+ users.
-
-**Q: Can I change the number of communities?**
-A: Yes! In `main_analyzer.py`, change `SVDAnalyzer.detect_communities(matrix, n_clusters=5)` to detect 5 communities instead of 3.
-
-**Q: What do the scores mean?**
-A: PageRank scores represent influence probability. A score of 0.15 means 15% chance a random walk lands on that user. Higher = more influential.
-
-**Q: Why SVD for communities?**
-A: SVD reveals latent patterns. Users clustered together have similar interaction signatures - they engage with content in similar ways.
-
----
-
-## 🔄 Workflow
-
-```
-Edit pesu_data.json
-        ↓
-Run: python main_analyzer.py
-        ↓
-Get: Most influential user + 3 communities
-        ↓
-Analyze: Who's influential? How are users grouped?
-        ↓
-Repeat: Edit data, run again, compare results
-```
-
----
-
-## 💻 Running the Code
+## Running the Code
 
 **Step 1: Install dependencies**
 ```bash
@@ -246,11 +148,7 @@ HIDDEN COMMUNITY CLUSTERS:
    ...
 ```
 
-Done! ✓
-
----
-
-## 🎓 Educational Purpose
+##  Educational Purpose
 
 This project demonstrates:
 - How eigenvalues reveal influence in networks
