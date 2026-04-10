@@ -50,9 +50,7 @@ class PESUAnalyzer:
         matrix = self.build_matrix(df, users)
         A = matrix.values.astype(float)
 
-        print("\n" + "=" * 70)
         print("LINEAR ALGEBRA PIPELINE - r/PESU")
-        print("=" * 70)
 
         print("\nSTEP 1 - MATRIX REPRESENTATION (10x15):")
         print("   Rows = Users | Columns = Comment IDs | Values = Interaction Strength")
@@ -116,9 +114,7 @@ class PESUAnalyzer:
         print(f"   Top-3 singular values: {np.round(S[:3], 4)}")
         print(f"   Users projected into 3D space -> K-Means applied")
 
-        print("\n" + "=" * 70)
         print("ANALYSIS RESULTS - r/PESU")
-        print("=" * 70)
 
         print("\nMOST INFLUENTIAL USER:")
         print(f"   {most_influential_user} (PageRank Score: {score:.6f})")
